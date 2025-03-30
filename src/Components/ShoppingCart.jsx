@@ -39,6 +39,7 @@ const ShoppingCart = () => {
                     <span>{item.quantity}</span>
                     <button className='quanity-control-btn' onClick={() => handleIncreaseQuantity(item.id)}>+</button>
                 </div>
+                <div className='remove-item-btn' onClick={() => handleRemoveItem(item.id)}>Remove</div>
             </li>
        ))}
       </ul>
